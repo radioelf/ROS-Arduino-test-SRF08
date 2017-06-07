@@ -38,14 +38,14 @@ ros::NodeHandle nh;
 #define   RX_milis           0X52                             // Modo calculo distancia - Resultado en microsegundos
 #define   RX_ANN_pulgadas    0X53                             // Modo ANN - Resultado en pulgadas
 #define   RX_ANN_centimetros 0X54                             // Modo ANN - Resultado en centímetros
-#define   RX_ANN_milis       0X55                             // Modo ANN - Resultado en micro-segundos
+#define   RX_ANN_milis       0X55                             // Modo ANN - Resultado en microsegundos
 #define   Sec1_cambio        0XA0                             // 1º en la secuencia para cambiar la dirección I2C
 #define   Sec2_cambio        0XAA                             // 2º en la secuencia para cambiar la dirección I2C 
 #define   Sec3_cambio        0XA5                             // 3º en la secuencia para cambiar la dirección I2C
 // registros SRF08
 #define  revision            0x00                             // Revision de Software  Registro de comando
 #define  LDR                 0x01                             // Sensor de luz,  registro de ganancia max. (por defecto 31)
-#define  ECO                 0x02                             // uint8_t alto de 1º eco, registro de alcance de distancia (por defecto 255)
+#define  ECO                 0x02                             // byte alto de 1º eco, registro de alcance de distancia (por defecto 255)
 // config SRF08
 #define ganacia              0x1F                             // ganacia 1-31
 #define rango                0x8C                             // rango de lectura 0X00->43mm, 0X8C->6mts (rango x 43 + 43)
